@@ -62,4 +62,14 @@ Source: Uploaded manually to Databricks DBFS.
 ---
 
 ## 📂 Project Structure
+retail-pyspark-capstone/
+├── bronze_layer.py # Ingest raw CSV and save as Bronze Delta table
+├── silver_layer.py # Add revenue and save as Silver table
+├── gold_layer.py # Business transformations for Gold table
+├── data/
+│ └── retail.csv # Sample input data (uploaded to DBFS)
+├── notebooks/
+│ └── retail_capstone_databricks.ipynb # Optional unified notebook
+├── screenshots/
+│ └── bronze_to_gold_flow.png
 
